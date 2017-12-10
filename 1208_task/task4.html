@@ -1,0 +1,45 @@
+
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#submitbtn').click(function(){
+        var a = $('#text1').val();
+        var b = $('#text2').val();
+        var c = $('#text3').val();
+        var d = $('#text4').val();
+        var e = $('#text5').val();
+        $('#out1').text(a);
+        $('#out2').text(b);
+        $('#out3').text(c);
+        $('#out4').text(d);
+        $('#out5').text(e);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div style="width: 100%; height: 100%; float: left">
+    <div style="width: 50%; height: 100%; background-color: blue; float: left">
+      <form>
+        name<input type="text" id="text1">
+        email<input type="text" id="text2">
+        password<input type="password" id="text3"><br>
+        phone<input type="text" id="text4">
+        city<input type="text" id="text5">
+        <input type="button" id="submitbtn"value="submmit">
+      </form>
+    </div>
+    <div style="width: 50%; height: 100%; background-color: green; float: left">
+      <p id="out1"></p>
+      <p id="out2"></p>
+      <p id="out3"></p>
+      <p id="out4"></p>
+      <p id="out5"></p>
+    </div>
+  </div>
+
+</body>
+</html>>

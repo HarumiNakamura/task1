@@ -1,0 +1,47 @@
+
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#1').click(function(){
+        $('#5').hide();
+        $('#6').hide();
+      });
+      $('#2').click(function(){
+        $('#3').hide();
+        $('#4').hide();
+        $('#6').show();
+      });
+      $('#6').click(function(){
+        $('#1').hide();
+        $('#3').show();
+        $('#5').show();
+      });
+      $('#3').click(function(){
+        $('#4').show();
+      });
+      $('#4').click(function(){
+        $('#3').hide();
+        $('#6').hide();
+        $('#1').show();
+      });
+      $('#5').click(function(){
+        $('#3').show();
+        $('#6').show();
+      });
+
+    });
+  </script>
+</head>
+<body>
+  <div id="1"style="width: 100px; height: 100px; background-color: black; float: left"></div>
+  <div id="2"style="width: 100px; height: 100px; background-color: yellow;float: left"></div>
+  <div id="3"style="width: 100px; height: 100px; background-color: blue; float: left "></div>
+  <div id="4"style="width: 100px; height: 100px; background-color: red; float: left"></div>
+  <div id="5"style="width: 100px; height: 100px; background-color: gray; float: left"></div>
+  <div id="6"style="width: 100px; height: 100px; background-color: green; float: left"></div>
+</body>
+
+</html>

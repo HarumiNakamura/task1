@@ -1,0 +1,50 @@
+
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#1').click(function(){
+        var a =$('#1').attr('src');
+        $('#7').attr('src',a);
+      });
+      $('#2').click(function(){
+        var b =$('#2').attr('src');
+        $('#7').attr('src',b);
+      });
+      $('#3').click(function(){
+        var c =$('#3').attr('src');
+        $('#7').attr('src',c);
+      });
+      $('#4').click(function(){
+        var d =$('#4').attr('src');
+        $('#7').attr('src',d);
+      });
+      $('#5').click(function(){
+        var e =$('#5').attr('src');
+        $('#7').attr('src',e);
+      });
+      $('#6').click(function(){
+        var f =$('#6').attr('src');
+        $('#7').attr('src',f);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div style="width: 100%; height: 100%; float: left">
+    <div style="width: 50%; height: 100%; background-color: blue; float: left">
+      <img src="pic1.png" alt="" style="width:100px; height: 100px" id="1">
+      <img src="pic2.jpeg" alt="" style="width:100px; height: 100px" id="2">
+      <img src="pic3.jpeg" alt="" style="width:100px; height: 100px" id="3"><br>
+      <img src="pic4.jpeg" alt="" style="width:100px; height: 100px" id="4">
+      <img src="pic5.png" alt="" style="width:100px; height: 100px" id="5">
+      <img src="pic6.png" alt="" style="width:100px; height: 100px" id="6">
+    </div>
+    <div style="width: 50%; height: 100%; background-color: green; float: left">
+      <img src="" alt="" style="width:100px; height: 100px" id="7">
+    </div>
+  </div>
+</body>
+</html>>
